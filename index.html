@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="svg/planta-DC.svg" type="image/x-icon">
+    <title>um jardim</title>
+    <style>
+        body {
+            background-color: #272727;
+        }
+
+        #planta-DC {
+            position: fixed;
+            top: 0;
+            right: 5%;
+        }
+
+        #planta-E {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        #planta-B {
+            position: fixed;
+            bottom: 0;
+            right: 25%;
+        }
+
+        #planta-D {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        img:hover {
+            transition: 5000ms;
+        }
+
+        /* filtros: https://codepen.io/sosuke/pen/Pjoqqp */
+
+        #planta-D:hover {
+            /* amarelo */
+            filter: invert(69%) sepia(71%) saturate(495%) hue-rotate(357deg) brightness(101%) contrast(98%);
+        }
+
+        #planta-DC:hover {
+            /* verde */
+            filter: invert(76%) sepia(99%) saturate(393%) hue-rotate(103deg) brightness(104%) contrast(105%);
+        }
+
+        #planta-E:hover {
+            /* laranja */
+            filter: invert(50%) sepia(36%) saturate(5063%) hue-rotate(10deg) brightness(98%) contrast(101%);
+        }
+
+        #planta-B:hover {
+            /* rosa */
+            filter: invert(66%) sepia(23%) saturate(5892%) hue-rotate(288deg) brightness(100%) contrast(92%);
+        }
+
+
+        @media (max-width: 400px) {
+            #planta-DC {
+                width: 30%;
+            }
+
+            #planta-E {
+                width: 40%;
+            }
+            
+            #planta-B {
+                width: 40%;
+                right: 15%;
+            }
+
+            #planta-D {
+                width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="svg/planta-B.svg" id="planta-B" alt="uma planta de folhas compridas e curvadas para cima, na parte inferior">
+    <img src="svg/planta-D.svg" id="planta-D" alt="uma planta com tronco, folhas grandes na parte de cima, uma flor e outras flores aéreas pendendo no ar">
+    <img src="svg/planta-DC.svg" id="planta-DC" alt="uma folha composta por vários folículos menores, pendendo da parte superior">
+    <img src="svg/planta-E.svg" id="planta-E" alt="uma flor grande, com folhas na base e galhos alongados para cima">
+</body>
+</html>
